@@ -4,35 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chapter 9 Software Evolution</title>
-    
+
     <link href="src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-50">
-
-
-    <nav class="bg-gray-900 fixed w-full top-0 left-0">
+    <nav class="bg-gray-900 fixed w-full top-0 left-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
-          
- 
-          <a href="home.html" class="text-2xl font-bold text-white">Software Evolution</a>
-  
+          <!-- Logo -->
+          <a href="home.html" class="text-2xl font-bold text-white">
+            Software Evolution
+          </a>
 
-          <ul class=" text-base font-semibold hidden md:flex space-x-8">
-            <li><a href="home.html" class="text-white hover:text-blue-300">Home</a></li>
-            <li><a href="9.1.html" class="text-white hover:text-blue-300"> Processes</a></li>
-            <li><a href="lawrence.html" class="text-white hover:text-blue-300">Program Dynamics</a></li>
-            <li><a href="index.html" class="text-white hover:text-blue-300">Legacy System Management</a></li>
+          <!-- Hamburger button (only visible on small screens) -->
+          <div class="md:hidden">
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <label
+              for="menu-toggle"
+              class="flex flex-col justify-between w-6 h-5 cursor-pointer"
+            >
+              <span
+                class="block w-full h-0.5 bg-white transform transition duration-300 origin-center peer-checked:rotate-45 peer-checked:translate-y-2"
+              ></span>
+              <span
+                class="block w-full h-0.5 bg-white transition duration-300 opacity-100 peer-checked:opacity-0"
+              ></span>
+              <span
+                class="block w-full h-0.5 bg-white transform transition duration-300 origin-center peer-checked:-rotate-45 peer-checked:-translate-y-2"
+              ></span>
+            </label>
+
+            <!-- Dropdown menu -->
+            <ul
+              class="absolute left-0 top-16 w-full bg-gray-900 flex flex-col items-center space-y-4 py-4 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300"
+            >
+              <li>
+                <a href="home.html" class="text-white hover:text-blue-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="9.1.html" class="text-white hover:text-blue-300"
+                  >Processes</a
+                >
+              </li>
+              <li>
+                <a href="9.2 index.html" class="text-white hover:text-blue-300"
+                  >Program Dynamics</a
+                >
+              </li>
+              <li>
+                <a href="lawrence.html" class="text-white hover:text-blue-300"
+                  >Software Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="index.html" class="text-white hover:text-blue-300"
+                  >Legacy System Management</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Desktop menu -->
+          <ul class="hidden md:flex space-x-8 text-base font-semibold">
+            <li>
+              <a href="home.html" class="text-white hover:text-blue-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="9.1.html" class="text-white hover:text-blue-300"
+                >Processes</a
+              >
+            </li>
+            <li>
+              <a href="9.2 index.html" class="text-white hover:text-blue-300"
+                >Program Dynamics</a
+              >
+            </li>
+            <li>
+              <a href="lawrence.html" class="text-white hover:text-blue-300"
+                >Software Maintenance</a
+              >
+            </li>
+            <li>
+              <a href="index.html" class="text-white hover:text-blue-300"
+                >Legacy System Management</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-   <main class="max-w-4xl mx-auto p-6 mt-20 text-justify">
-  <header class="mb-10 text-center">
-    <h1 class="text-4xl  mb-2">Software Maintenance</h1>
-    <p class="text-gray-600 dark:text-gray-400 text-sm">Chapter 9 · Updated October 2025</p>
-  </header>
+
+    <main class="max-w-4xl mx-auto p-6 mt-20">
+      <header class="mb-10 text-center">
+        <h1 class="text-4xl font-bold mb-2">
+         Software Maintenance
+        </h1>
+        <p class="text-gray-600 text-sm">Chapter 9 · Updated October 2025</p>
+      </header>
 <div class="law">
     <!-- Main Content Section -->
    <div class="pt-20"></div>
@@ -348,11 +420,16 @@ Chapter 7) and replacing existing code with code that implements these design pa
 </body>
 </main>
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-gray-300 py-6 mt-10 w-full">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+     <footer class="bg-gray-900 text-gray-300 py-6 mt-10">
+      <div
+        class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between"
+      >
         <p class="text-sm">
-          &copy; 2025 <span class="font-semibold text-white">Software Evolution</span>. All rights reserved.
+          &copy; 2025
+          <span class="font-semibold text-white">Software Evolution</span>. All
+          rights reserved.
         </p>
+
         <p class="text-sm mt-2 md:mt-0">
           Contact:
           <span class="text-blue-400">Gonzales</span>,
@@ -362,6 +439,9 @@ Chapter 7) and replacing existing code with code that implements these design pa
         </p>
       </div>
     </footer>
-    
-    
+  </body>
 </html>
+
+    
+    
+
