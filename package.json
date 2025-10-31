@@ -2,8 +2,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.14",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.14"
+    "react-dom": "^19.2.0"
   },
   "name": "software-evolution",
   "version": "1.0.0",
@@ -24,6 +23,8 @@
     "url": "https://github.com/b3rtuso/Software-Evolution/issues"
   },
   "homepage": "https://github.com/b3rtuso/Software-Evolution#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^4.1.16"
+  },
   "type": "commonjs"
 }
